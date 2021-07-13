@@ -6,17 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://oddc.icu">
-  <title>Archives: 2021/7 | 今日もいい天気〜</title>
+  <title>在Hexo里自定义gitalk | 今日もいい天気〜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="283 Production">
-<meta property="og:type" content="website">
-<meta property="og:title" content="今日もいい天気〜">
-<meta property="og:url" content="http://oddc.icu/archives/2021/07/index.html">
+  <meta name="description" content="修改gitalk的css属性gitalk使用了jsDelivr来给页面直接引入。因此可以通过fork整个gittalk的项目，在自己的仓库做出修改后，同样使用jsDeliver引用资源。在gitalk.ejs中将引用链接改为自己的就可以了。以透明度为例，大致流程如下。 通过审查元素找到要修改的地方的css元素">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Hexo里自定义gitalk">
+<meta property="og:url" content="http://oddc.icu/2021/07/13/gitalk-opacity/index.html">
 <meta property="og:site_name" content="今日もいい天気〜">
-<meta property="og:description" content="283 Production">
+<meta property="og:description" content="修改gitalk的css属性gitalk使用了jsDelivr来给页面直接引入。因此可以通过fork整个gittalk的项目，在自己的仓库做出修改后，同样使用jsDeliver引用资源。在gitalk.ejs中将引用链接改为自己的就可以了。以透明度为例，大致流程如下。 通过审查元素找到要修改的地方的css元素">
 <meta property="og:locale">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gsfe5l19exj30yk08sgmx.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gsfeahn95nj30m601e3yp.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gsfeg31itxj30sq0bgq40.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gsfeosxsebj30r00eg1a8.jpg">
+<meta property="article:published_time" content="2021-07-13T07:36:53.000Z">
+<meta property="article:modified_time" content="2021-07-13T08:38:52.451Z">
 <meta property="article:author" content="OddC">
+<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/008i3skNly1gsfe5l19exj30yk08sgmx.jpg">
   
     <link rel="alternative" href="/atom.xml" title="今日もいい天気〜" type="application/atom+xml">
   
@@ -167,36 +176,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-gitalk-opacity" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/13/gitalk-opacity/" class="archive-article-date">
-  	<time datetime="2021-07-13T07:36:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/13/gitalk-opacity/">在Hexo里自定义gitalk</a>
+    <h1 class="article-title" itemprop="name">
+      在Hexo里自定义gitalk
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/07/13/gitalk-opacity/" class="archive-article-date">
+  	<time datetime="2021-07-13T07:36:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="修改gitalk的css属性"><a href="#修改gitalk的css属性" class="headerlink" title="修改gitalk的css属性"></a>修改gitalk的css属性</h2><p><a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk/blob/master">gitalk</a>使用了<a target="_blank" rel="noopener" href="https://www.jsdelivr.com/package/npm/gitalk">jsDelivr</a>来给页面直接引入。因此可以通过fork整个gittalk的项目，在自己的仓库做出修改后，同样使用jsDeliver引用资源。在gitalk.ejs中将引用链接改为自己的就可以了。以透明度为例，大致流程如下。</p>
+<h3 id="通过审查元素找到要修改的地方的css元素"><a href="#通过审查元素找到要修改的地方的css元素" class="headerlink" title="通过审查元素找到要修改的地方的css元素"></a>通过审查元素找到要修改的地方的css元素</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsfe5l19exj30yk08sgmx.jpg"></p>
+ <span id="more"></span>
+
+<h3 id="在fork过来的仓库中找到对应位置修改"><a href="#在fork过来的仓库中找到对应位置修改" class="headerlink" title="在fork过来的仓库中找到对应位置修改"></a>在fork过来的仓库中找到对应位置修改</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsfeahn95nj30m601e3yp.jpg" alt="sc2"></p>
+<p>通过行号快速找到要修改的内容，此处将背景改成85%透明度。</p>
+<p>修改后发布自己的release版本</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsfeg31itxj30sq0bgq40.jpg" alt="s3"></p>
+<h3 id="通过jsDelivr重定向引用资源"><a href="#通过jsDelivr重定向引用资源" class="headerlink" title="通过jsDelivr重定向引用资源"></a>通过jsDelivr重定向引用资源</h3><p>通过如下地址应用资源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>修改 主题文件夹里 layout/_partial/post/gitalk.ejs里的引用链接为自己修改后的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/cookiekira/gitalk@v2/dist/gitalk.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Hexo部署-上传-结束"><a href="#Hexo部署-上传-结束" class="headerlink" title="Hexo部署 上传 结束"></a>Hexo部署 上传 结束</h3><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsfeosxsebj30r00eg1a8.jpg" alt="截屏2021-07-13 下午4.33.17"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -212,56 +234,128 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://oddc.icu/2021/07/13/gitalk-opacity/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/07/12/hello-world/" class="archive-article-date">
-  	<time datetime="2021-07-12T11:00:06.443Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-12</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/12/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/12/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">test</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
+  
+
+  
+
+  
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cookiekira/gitalk@v1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: 'c2acde8bec65d6540c9a',
+  	clientSecret: 'cf8cdd3828f4a3e901389c3b7f3d331974644f88',
+  	repo: 'gitment-comments',
+  	owner: 'Cookiekira',
+  	admin: ['Cookiekira'],
+  	id: 'Tue Jul 13 2021 15:36:53 GMT+0800',
+  	distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+  
     
 
 
@@ -285,8 +379,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
