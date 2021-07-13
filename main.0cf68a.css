@@ -757,6 +757,7 @@ body {
 
 .mid-col {
     background-image: url("https://tva1.sinaimg.cn/large/008i3skNly1gsf5r6k95mj30zk0k1kjl.jpg");
+    background-attachment: fixed;
     position: absolute;
     right: 0;
     min-height: 100%;
