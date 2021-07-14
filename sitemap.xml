@@ -39,6 +39,13 @@
 
   
   <url>
+    <loc>https://oddc.icu/tags/test/</loc>
+    <lastmod>2021-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://oddc.icu/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2021-07-14</lastmod>
     <changefreq>daily</changefreq>
@@ -47,13 +54,6 @@
   
   <url>
     <loc>https://oddc.icu/tags/hexo/</loc>
-    <lastmod>2021-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://oddc.icu/tags/test/</loc>
     <lastmod>2021-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
